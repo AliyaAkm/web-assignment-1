@@ -1,0 +1,65 @@
+body {
+    background-color: #e6f7ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffa07a;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border: 3px solid #ffa07a;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f0f8ff;
+    border-left: 10px solid #ffa07a;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ffa07a;
+    padding: 10px;
+    text-align: center;
+}

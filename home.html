@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fadadd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background-color: #ffdab9;
+            border-radius: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffb6c1;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #ffb6c1;
+            flex-shrink: 0;
+            display: block;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #about-me {
+            background-color: #fffaf0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ffb6c1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        blockquote {
+            font-style: italic;
+            background-color: #ffe4e1;
+            border-left: 10px solid #ffb6c1;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #4a4a4a;
+        }
+
+        a:hover {
+            color: #ff69b4;
+        }
+         .travel-container {
+             display: flex;
+             flex-wrap: wrap;
+             gap: 20px;
+             justify-content: space-around;
+         }
+
+        .travel-place {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            max-width: calc(33.333% - 20px);
+            text-align: center;
+            background-color: #fffaf0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .travel-place h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .travel-place p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .country-photo {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Personal Webpage</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello! My name is Aliya, and this is my personal webpage. I am from the city of Karaganda.I'm 18 years old.</p>
+    <img src="photo.jpg" alt="Aliya's Photo" class="profile-pic">
+    <p>I chose a major in IT because I like working with data and turning it into useful information. This area also provides an opportunity to constantly study</p>
+
+    <h3>Quick Facts About Me</h3>
+    <ul>
+        <li>My favorite book is "Origin" by Dan Brown</li>
+        <li>My favorite manga is "Seraph of the End"</li>
+        <li>My favorite drink is Cola</li>
+    </ul>
+</section>
+
+<section id="favorite-band">
+    <h2>My Favorite Bands</h2>
+    <p>Music is a huge part of my life, and I have a few favorite bands that always keep me inspired:</p>
+    <ul>
+        <li><strong>Chase Atlantic</strong> – Their unique blend of alternative, R&B, and rock really stands out. Some of my favorite tracks are "Swim," "Friends," and "Into It."</li>
+        <li><strong>Нервы</strong> – This Russian band perfectly mixes rock and emotional lyrics, and their music resonates deeply with me. Some songs I love include "Ненапатия," "Ярче и теплее," and "Самый дорогой человек."</li>
+        <li><strong>Wanna One</strong> – As a fan of K-pop, Wanna One’s energetic performances and catchy tunes always get me in a great mood. Some of my favorite songs are "Energetic," "Boomerang," and "Beautiful."</li>
+    </ul>
+    <p>These bands inspire me both in life and while I’m working on my projects.</p>
+</section>
+
+
+<section id="quote">
+    <h2>Favorite Quote</h2>
+    <blockquote cite="https://example.com">
+        "The only way to do great work is to love what you do." – Steve Jobs
+    </blockquote>
+    <blockquote cite="https://example.com">
+        "Success is not the key to happiness. Happiness is the key to success." – Albert Schweitzer
+    </blockquote>
+    <blockquote cite="https://example.com">
+        "Your time is limited, so don’t waste it living someone else’s life." – Steve Jobs
+    </blockquote>
+</section>
+<section id="travel">
+    <h2>Places I Want to Visit</h2>
+    <div class="travel-container">
+        <div class="travel-place">
+            <h3>South Korea</h3>
+            <p>I dream of visiting Seoul, experiencing the rich culture, and exploring the beautiful landscapes like Namsan Tower and Gyeongbokgung Palace.</p>
+            <img src="https://iv.kommersant.ru/Issues.photo/LifeStyle_Online/2017/12/11/KLS_000165_00007_1_t222_153218.jpg" alt="South Korea" class="country-photo">
+        </div>
+
+        <div class="travel-place">
+            <h3>Japan</h3>
+            <p>I want to explore Tokyo's bustling city life and visit the peaceful temples of Kyoto, as well as enjoy the cherry blossoms in spring.</p>
+            <img src="https://avttravel.ru/assets/galleries/58/jap-3.jpg" alt="Japan" class="country-photo">
+        </div>
+
+        <div class="travel-place">
+            <h3>Sweden</h3>
+            <p>I would love to visit Stockholm, see the Northern Lights, and experience the Scandinavian design and lifestyle.</p>
+            <img src="https://st.gid.turtella.ru/img/64/1ffy.jpg" alt="Sweden" class="country-photo">
+        </div>
+    </div>
+</section>
+</body>
+</html>
